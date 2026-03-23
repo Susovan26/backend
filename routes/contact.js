@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
     const { name, email, phone, subject, message } = req.body;
 
     await pool.query(
-      "INSERT INTO cur_contact(name,email,phone,message) VALUES($1,$2,$3,$4)",
+      "INSERT INTO cou_contact(name,email,phone,message) VALUES($1,$2,$3,$4)",
       [name, email, phone, message]
     );
 
